@@ -3,8 +3,9 @@
     padding-bottom: 200px;
     position: relative;
     color: $white;
-    margin-top: -118px;
+    margin-top: -122px;
     margin-bottom: 100px;
+    z-index: 0;
 }
 
 .presentation__content {
@@ -24,6 +25,7 @@
     top: 0;
     width: 100%;
     height: 100%;
+    z-index: -1;
     img {
         height: 100%;
         width: 100%;

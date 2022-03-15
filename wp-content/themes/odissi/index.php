@@ -250,14 +250,14 @@ Slate is designed for freelancers</p>
                         <div class="col-12 col-lg-8">
                             <div class="contact__info">
                                 <div class="col-12">
-                                    <div class="row">
+                                    <div class="row wrapper__contact-info">
                                     <?php if( have_rows('contact_info', 'option') ): ?>
                                         <?php while( have_rows('contact_info', 'option') ): the_row(); ?>
                                             <?php 
                                                 $iconContactInfo = get_sub_field('icon');
                                                 $iconContactInfoUrl = $iconContactInfo['url'];
                                             ?>
-                                        <div class="col-4">
+                                        <div class="col-lg-4 col-sm-12">
                                             <div class="contact__info-item">
                                                 <img src="<?= $iconContactInfoUrl ?>" alt="">
                                                 <p><?= the_sub_field('content') ?></p>

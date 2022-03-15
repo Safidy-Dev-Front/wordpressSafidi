@@ -10,6 +10,9 @@
 }
 
 .contact__form {
+    @include mq(max, 991px) {
+        padding: 25px;
+    }
     padding: 50px;
     box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
@@ -36,6 +39,7 @@
 
 .contact__info {
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .contact__info-item {
@@ -53,6 +57,17 @@
         margin-right: 10px;
         &:last-child {
             margin-right: 00;
+        }
+    }
+}
+
+.wrapper__contact-info {
+    @include mq(max, 991px) {
+        display: block;
+        .contact__info-item {
+            width: 100% !important;
+            display: flex;
+            text-align: left;
         }
     }
 }

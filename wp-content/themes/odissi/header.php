@@ -1,14 +1,18 @@
 <?php
 wp_head();
 ?>
-<header>
+<header id="header">
     <div class="header__container">
         <div class="header__navigation">
             <div class="container">
                <div class="row row-header-nav">
-                <div class="col-6 col-lg-8 col-md-8">
+                <div class="col-8 col-lg-8 col-md-8 header__wrapper-logo-menu">
                     <div class="row header_flex">
-                        <div class="col-8">
+                        <div class="col-4 col-lg-8">
+                            <div class="header__burger-menu">
+                                <span class="top-span"></span>
+                                <span class="bottom-span"></span>
+                            </div>
                             <div class="header__nav-menu">
                                 <?php 
                                     wp_nav_menu([
@@ -18,7 +22,7 @@ wp_head();
                                 ?>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-8 col-lg-4">
                         <?php 
                             $custom_logo_id = get_theme_mod( 'custom_logo' );
                             $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -30,7 +34,7 @@ wp_head();
                         </div>
                     </div>
                     </div>
-                    <div class="col-6 col-lg-4 col-md-4 ">
+                    <div class="col-4 col-lg-4 col-md-4 header__wrapper-social-reseaux">
                         <div class="header__social text-right">
                             <?php if( have_rows('element_reseaux_social', 'option') ):  ?>
                                 <?php   while( have_rows('element_reseaux_social', 'option') ): the_row();?>
