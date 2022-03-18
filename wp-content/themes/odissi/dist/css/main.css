@@ -11381,6 +11381,7 @@ input.wpcf7-submit {
 @media (max-width: 991px) {
   .header__navigation {
     position: static;
+    padding: 20px 0;
   }
 }
 
@@ -11460,7 +11461,7 @@ input.wpcf7-submit {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 991px) {
   .header__wrapper-social-reseaux {
     display: none;
   }
@@ -11488,6 +11489,10 @@ input.wpcf7-submit {
 }
 .header__burger-menu.display-menu span.bottom-span {
   transform: rotate(315deg) translateY(-3.5px);
+  width: 40px;
+}
+.header__burger-menu.display-menu span.bottom-span-1 {
+  opacity: 0;
 }
 
 .header__burger-menu span {
@@ -11503,6 +11508,15 @@ input.wpcf7-submit {
 }
 .header__burger-menu span.bottom-span {
   margin-top: 5px;
+  width: 30px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.header__burger-menu span.bottom-span-1 {
+  margin-top: 5px;
+  width: 20px;
+  margin-right: 0;
+  margin-left: auto;
 }
 @media (max-width: 991px) {
   .header__burger-menu span {
@@ -11510,6 +11524,32 @@ input.wpcf7-submit {
   }
 }
 
+@media (max-width: 991px) {
+  .header__wrapper-logo-menu {
+    width: 100%;
+  }
+
+  .header__wrapper-logo-menu .header__logo {
+    text-align: left;
+  }
+
+  .header_flex {
+    justify-content: space-between;
+  }
+
+  .element:nth-of-type(1) {
+    order: 2;
+    margin-right: 0;
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  .element:nth-of-type(2) {
+    -webkit-order: 1;
+    order: 1;
+    margin-left: 0;
+  }
+}
 #presentation {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -11559,6 +11599,11 @@ input.wpcf7-submit {
   margin-top: 95px;
   margin-bottom: 95px;
 }
+@media (max-width: 991px) {
+  .features__content {
+    padding: 0 50px;
+  }
+}
 
 .features__item {
   text-align: center;
@@ -11602,6 +11647,15 @@ input.wpcf7-submit {
   margin-bottom: 10px;
 }
 
+@media (max-width: 991px) {
+  .newsletter__content {
+    text-align: center;
+  }
+  .newsletter__content .newsletter__text-form {
+    margin-top: 50px;
+  }
+}
+
 .parteners__head {
   padding-top: 100px;
   padding-bottom: 90px;
@@ -11611,9 +11665,14 @@ input.wpcf7-submit {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .parteners__client-list {
     grid-template-columns: 2fr 2fr;
+  }
+}
+@media (max-width: 768px) {
+  .parteners__client-list {
+    grid-template-columns: 4fr;
   }
 }
 
@@ -11722,12 +11781,19 @@ input.wpcf7-submit {
     margin-top: 20px;
     margin-bottom: 20px;
     height: auto;
+    padding-top: 40px;
   }
 }
 
 @media (max-width: 991px) {
   .pricing__item.item-1 {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing__item.item-3 {
+    margin-top: 20px;
   }
 }
 
@@ -11768,14 +11834,14 @@ input.wpcf7-submit {
 }
 
 .contact__form {
-  padding: 50px;
+  padding: 50px 25px;
   box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
   border-radius: 20px;
   background-color: #ffffff;
 }
-@media (max-width: 991px) {
+@media (max-width: 1223px) {
   .contact__form {
-    padding: 25px;
+    padding: 50px 25px;
   }
 }
 
@@ -11783,6 +11849,11 @@ input.wpcf7-submit {
   max-width: 700px;
   width: 100%;
   margin: auto;
+}
+@media (max-width: 991px) {
+  .contact__maps {
+    display: none;
+  }
 }
 .contact__maps imframe {
   width: 100%;
@@ -11830,6 +11901,38 @@ input.wpcf7-submit {
   }
 }
 
+@media (max-width: 991px) {
+  .content__form {
+    order: 2;
+  }
+
+  .content__info {
+    order: 1;
+  }
+
+  .contact__social {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .content__info .info-item:nth-of-type(1) {
+    -webkit-order: 3;
+    order: 3;
+  }
+  .content__info .info-item:nth-of-type(2) {
+    -webkit-order: 2;
+    order: 2;
+  }
+  .content__info .info-item:nth-of-type(3) {
+    -webkit-order: 1;
+    order: 1;
+  }
+  .content__info .contact__info-item p {
+    margin-left: 15px;
+  }
+}
+
 #footer {
   padding: 160px 0;
   background-color: #252B42;
@@ -11838,11 +11941,28 @@ input.wpcf7-submit {
 #footer h3, #footer .h3, #footer a {
   color: #ffffff;
 }
+@media (max-width: 991px) {
+  #footer {
+    text-align: center;
+  }
+}
 
+@media (max-width: 991px) {
+  .footer__menus-item {
+    margin-bottom: 20px;
+  }
+}
 .footer__menus-item ul {
   padding: 0;
   margin: 0;
 }
 .footer__menus-item a {
   font-size: 15px;
+}
+
+@media (max-width: 991px) {
+  .fastest__centent {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }

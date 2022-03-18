@@ -9,6 +9,9 @@
     margin-right: auto;
     margin-top: 95px;
     margin-bottom: 95px;
+    @include mq(max, 991px) {
+        padding: 0 50px;
+    }
 }
 .features__item{
     text-align: center;

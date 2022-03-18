@@ -242,13 +242,13 @@ Slate is designed for freelancers</p>
             <div class="contact__content">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-12 col-lg-4">
+                        <div class="col-12 col-lg-4 content__form">
                             <div class="contact__form">
                                 <?php echo do_shortcode('[contact-form-7 id="13" title="Untitled"]') ?>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-8">
-                            <div class="contact__info">
+                        <div class="col-12 col-lg-8 content__info">
+                            <div class="contact__info info-item">
                                 <div class="col-12">
                                     <div class="row wrapper__contact-info">
                                     <?php if( have_rows('contact_info', 'option') ): ?>
@@ -268,10 +268,10 @@ Slate is designed for freelancers</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="contact__maps text-center">
+                            <div class="contact__maps info-item text-center">
                                 <iframe src="https://www.google.com/maps/d/embed?mid=1pGPpoTbRXbaa017Qti5ote6gLmWO4YUJ&ehbc=2E312F" width="100%" height="430"></iframe>
                             </div>
-                            <div class="contact__social">
+                            <div class="contact__social info-item">
                                 <?php if( have_rows('contact_social', 'option') ):  ?>
                                     <?php   while( have_rows('contact_social', 'option') ): the_row();?>
                                     <?php 

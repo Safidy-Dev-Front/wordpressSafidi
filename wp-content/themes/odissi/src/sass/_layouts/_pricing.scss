@@ -50,12 +50,19 @@
         margin-top: 20px;
         margin-bottom: 20px;
         height: auto;
+        padding-top: 40px;
     }
 }
 
 .pricing__item.item-1 {
     @include mq(max, 991px) {
         margin-bottom: 20px;
+    }
+}
+
+.pricing__item.item-3 {
+    @include mq(max, 767px) {
+        margin-top: 20px;
     }
 }
 

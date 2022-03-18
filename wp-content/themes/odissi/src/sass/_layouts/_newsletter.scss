@@ -19,3 +19,11 @@
         margin-bottom: 10px;
     }
 }
+.newsletter__content{
+    @include mq(max, 991px) {
+        text-align: center;
+        .newsletter__text-form{
+            margin-top: 50px;
+        }
+    }
+}
